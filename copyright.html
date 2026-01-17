@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telif Hakkı - NinniParki</title>
+    <title>Copyright - NinniParki</title>
     <style>
         * {
             margin: 0;
@@ -27,6 +27,27 @@
             border-radius: 12px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             padding: 40px;
+        }
+        
+        .language-selector {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+        
+        .language-selector select {
+            padding: 10px 15px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 1em;
+            background: white;
+            color: #333;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s;
+        }
+        
+        .language-selector select:hover {
+            background: #f8f9fa;
         }
         
         h1 {
@@ -94,6 +115,27 @@
             color: #667eea;
         }
         
+        [data-lang] {
+            display: none;
+        }
+        
+        [data-lang].active {
+            display: block;
+        }
+        
+        body[dir="rtl"] {
+            direction: rtl;
+        }
+        
+        body[dir="rtl"] .section ul {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+        
+        body[dir="rtl"] .language-selector {
+            text-align: left;
+        }
+        
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
@@ -107,70 +149,746 @@
 </head>
 <body>
     <div class="container">
-        <h1>Telif Hakkı Bildirimi</h1>
-        <p class="subtitle">NinniParki - Bebek Ninni Uygulaması</p>
-        
-        <div class="section">
-            <h2>© <span class="year">2024</span> NinniParki. Tüm Hakları Saklıdır.</h2>
-            <p>
-                Bu uygulama ve içeriği telif hakkı yasaları ile korunmaktadır. 
-                Tüm hakları saklıdır. İzinsiz kopyalama, dağıtma veya kullanım yasaktır.
-            </p>
+        <div class="language-selector">
+            <select id="langSelect">
+                <option value="tr">Türkçe</option>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+                <option value="it">Italiano</option>
+                <option value="ru">Русский</option>
+                <option value="ar">العربية</option>
+                <option value="zh">中文</option>
+                <option value="ja">日本語</option>
+            </select>
         </div>
         
-        <div class="section">
-            <h2>Uygulama İçeriği</h2>
-            <p>
-                NinniParki uygulamasında bulunan tüm ninni müzikleri, kullanıcı arayüzü tasarımları, 
-                grafik öğeleri, logolar ve yazılım kodu telif hakkı ile korunmaktadır.
-            </p>
+        <!-- Turkish -->
+        <div data-lang="tr" class="active">
+            <h1>Telif Hakkı Bildirimi</h1>
+            <p class="subtitle">NinniParki - Bebek Ninni Uygulaması</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. Tüm Hakları Saklıdır.</h2>
+                <p>
+                    Bu uygulama ve içeriği telif hakkı yasaları ile korunmaktadır. 
+                    Tüm hakları saklıdır. İzinsiz kopyalama, dağıtma veya kullanım yasaktır.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Uygulama İçeriği</h2>
+                <p>
+                    NinniParki uygulamasında bulunan tüm ninni müzikleri, kullanıcı arayüzü tasarımları, 
+                    grafik öğeleri, logolar ve yazılım kodu telif hakkı ile korunmaktadır.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Kullanım Koşulları</h2>
+                <p>
+                    Bu uygulama kişisel kullanım için sağlanmaktadır. Aşağıdaki faaliyetler yasaktır:
+                </p>
+                <ul>
+                    <li>Uygulamanın veya içeriğinin izinsiz kopyalanması veya dağıtılması</li>
+                    <li>Uygulamadaki müziklerin veya içeriklerin ticari amaçlarla kullanılması</li>
+                    <li>Uygulamanın tersine mühendisliğinin yapılması veya değiştirilmesi</li>
+                    <li>Uygulama içeriğinin başka platformlarda kullanılması</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Üçüncü Taraf İçerik</h2>
+                <p>
+                    Uygulama içerisinde kullanılan bazı üçüncü taraf kütüphaneler ve hizmetler kendi 
+                    telif hakları ve kullanım koşullarına tabidir. Bu hizmetler şunları içerir:
+                </p>
+                <ul>
+                    <li>Google AdMob - Reklam hizmetleri</li>
+                    <li>Firebase - Analitik hizmetleri</li>
+                    <li>JetBrains Compose Multiplatform - UI framework</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Fikri Mülkiyet Hakları</h2>
+                <p>
+                    "NinniParki" adı, logosu ve markası bu uygulamanın fikri mülkiyetidir. 
+                    Bu markaların izinsiz kullanımı yasaktır.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>İletişim</h2>
+                <p>Telif hakkı ile ilgili sorularınız veya ihlal bildirimleri için lütfen bizimle iletişime geçin.</p>
+                <p><strong>Uygulama Adı:</strong> NinniParki</p>
+                <p><strong>Geliştirici:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>Son Güncelleme: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. Tüm hakları saklıdır.</p>
+            </div>
         </div>
         
-        <div class="section">
-            <h2>Kullanım Koşulları</h2>
-            <p>
-                Bu uygulama kişisel kullanım için sağlanmaktadır. Aşağıdaki faaliyetler yasaktır:
-            </p>
-            <ul>
-                <li>Uygulamanın veya içeriğinin izinsiz kopyalanması veya dağıtılması</li>
-                <li>Uygulamadaki müziklerin veya içeriklerin ticari amaçlarla kullanılması</li>
-                <li>Uygulamanın tersine mühendisliğinin yapılması veya değiştirilmesi</li>
-                <li>Uygulama içeriğinin başka platformlarda kullanılması</li>
-            </ul>
+        <!-- English -->
+        <div data-lang="en">
+            <h1>Copyright Notice</h1>
+            <p class="subtitle">NinniParki - Baby Lullaby App</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. All Rights Reserved.</h2>
+                <p>
+                    This application and its content are protected by copyright laws. 
+                    All rights reserved. Unauthorized copying, distribution, or use is prohibited.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Application Content</h2>
+                <p>
+                    All lullaby music, user interface designs, graphic elements, logos, and software code 
+                    in the NinniParki application are protected by copyright.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Terms of Use</h2>
+                <p>
+                    This application is provided for personal use. The following activities are prohibited:
+                </p>
+                <ul>
+                    <li>Unauthorized copying or distribution of the application or its content</li>
+                    <li>Commercial use of music or content in the application</li>
+                    <li>Reverse engineering or modification of the application</li>
+                    <li>Use of application content on other platforms</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Third-Party Content</h2>
+                <p>
+                    Some third-party libraries and services used in the application are subject to their own 
+                    copyrights and terms of use. These services include:
+                </p>
+                <ul>
+                    <li>Google AdMob - Advertising services</li>
+                    <li>Firebase - Analytics services</li>
+                    <li>JetBrains Compose Multiplatform - UI framework</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Intellectual Property Rights</h2>
+                <p>
+                    The name "NinniParki", logo, and brand are the intellectual property of this application. 
+                    Unauthorized use of these marks is prohibited.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>For questions regarding copyright or violation reports, please contact us.</p>
+                <p><strong>Application Name:</strong> NinniParki</p>
+                <p><strong>Developer:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>Last Updated: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. All rights reserved.</p>
+            </div>
         </div>
         
-        <div class="section">
-            <h2>Üçüncü Taraf İçerik</h2>
-            <p>
-                Uygulama içerisinde kullanılan bazı üçüncü taraf kütüphaneler ve hizmetler kendi 
-                telif hakları ve kullanım koşullarına tabidir. Bu hizmetler şunları içerir:
-            </p>
-            <ul>
-                <li>Google AdMob - Reklam hizmetleri</li>
-                <li>Firebase - Analitik hizmetleri</li>
-                <li>JetBrains Compose Multiplatform - UI framework</li>
-            </ul>
+        <!-- German -->
+        <div data-lang="de">
+            <h1>Urheberrechtshinweis</h1>
+            <p class="subtitle">NinniParki - Baby-Schlaflied-App</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. Alle Rechte vorbehalten.</h2>
+                <p>
+                    Diese Anwendung und ihre Inhalte sind durch Urheberrechtsgesetze geschützt. 
+                    Alle Rechte vorbehalten. Unerlaubtes Kopieren, Verteilen oder Verwenden ist verboten.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Anwendungsinhalt</h2>
+                <p>
+                    Alle Schlafliedmusik, Benutzeroberflächen-Designs, Grafikelemente, Logos und Softwarecode 
+                    in der NinniParki-Anwendung sind urheberrechtlich geschützt.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Nutzungsbedingungen</h2>
+                <p>
+                    Diese Anwendung wird für den persönlichen Gebrauch bereitgestellt. Folgende Aktivitäten sind verboten:
+                </p>
+                <ul>
+                    <li>Unerlaubtes Kopieren oder Verteilen der Anwendung oder ihrer Inhalte</li>
+                    <li>Kommerzielle Nutzung von Musik oder Inhalten in der Anwendung</li>
+                    <li>Reverse Engineering oder Änderung der Anwendung</li>
+                    <li>Verwendung von Anwendungsinhalten auf anderen Plattformen</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Drittanbieter-Inhalte</h2>
+                <p>
+                    Einige in der Anwendung verwendete Drittanbieter-Bibliotheken und -Dienste unterliegen ihren eigenen 
+                    Urheberrechten und Nutzungsbedingungen. Zu diesen Diensten gehören:
+                </p>
+                <ul>
+                    <li>Google AdMob - Werbedienste</li>
+                    <li>Firebase - Analysedienste</li>
+                    <li>JetBrains Compose Multiplatform - UI-Framework</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Geistiges Eigentum</h2>
+                <p>
+                    Der Name "NinniParki", das Logo und die Marke sind geistiges Eigentum dieser Anwendung. 
+                    Unerlaubte Verwendung dieser Marken ist verboten.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Kontakt</h2>
+                <p>Bei Fragen zum Urheberrecht oder Verstößen kontaktieren Sie uns bitte.</p>
+                <p><strong>Anwendungsname:</strong> NinniParki</p>
+                <p><strong>Entwickler:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>Zuletzt aktualisiert: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. Alle Rechte vorbehalten.</p>
+            </div>
         </div>
         
-        <div class="section">
-            <h2>Fikri Mülkiyet Hakları</h2>
-            <p>
-                "NinniParki" adı, logosu ve markası bu uygulamanın fikri mülkiyetidir. 
-                Bu markaların izinsiz kullanımı yasaktır.
-            </p>
+        <!-- French -->
+        <div data-lang="fr">
+            <h1>Avis de droit d'auteur</h1>
+            <p class="subtitle">NinniParki - Application de berceuse pour bébé</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. Tous droits réservés.</h2>
+                <p>
+                    Cette application et son contenu sont protégés par les lois sur le droit d'auteur. 
+                    Tous droits réservés. La copie, la distribution ou l'utilisation non autorisée est interdite.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Contenu de l'application</h2>
+                <p>
+                    Toute la musique de berceuse, les conceptions d'interface utilisateur, les éléments graphiques, 
+                    les logos et le code logiciel de l'application NinniParki sont protégés par le droit d'auteur.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Conditions d'utilisation</h2>
+                <p>
+                    Cette application est fournie à des fins d'utilisation personnelle. Les activités suivantes sont interdites:
+                </p>
+                <ul>
+                    <li>Copie ou distribution non autorisée de l'application ou de son contenu</li>
+                    <li>Utilisation commerciale de la musique ou du contenu de l'application</li>
+                    <li>Ingénierie inverse ou modification de l'application</li>
+                    <li>Utilisation du contenu de l'application sur d'autres plates-formes</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Contenu tiers</h2>
+                <p>
+                    Certaines bibliothèques et services tiers utilisés dans l'application sont soumis à leurs propres 
+                    droits d'auteur et conditions d'utilisation. Ces services incluent:
+                </p>
+                <ul>
+                    <li>Google AdMob - Services publicitaires</li>
+                    <li>Firebase - Services d'analyse</li>
+                    <li>JetBrains Compose Multiplatform - Framework UI</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Droits de propriété intellectuelle</h2>
+                <p>
+                    Le nom "NinniParki", le logo et la marque sont la propriété intellectuelle de cette application. 
+                    L'utilisation non autorisée de ces marques est interdite.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>Pour toute question concernant le droit d'auteur ou les signalements de violation, veuillez nous contacter.</p>
+                <p><strong>Nom de l'application:</strong> NinniParki</p>
+                <p><strong>Développeur:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>Dernière mise à jour: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. Tous droits réservés.</p>
+            </div>
         </div>
         
-        <div class="contact-info">
-            <h2>İletişim</h2>
-            <p>Telif hakkı ile ilgili sorularınız veya ihlal bildirimleri için lütfen bizimle iletişime geçin.</p>
-            <p><strong>Uygulama Adı:</strong> NinniParki</p>
-            <p><strong>Geliştirici:</strong> NinniParki Development Team</p>
+        <!-- Spanish -->
+        <div data-lang="es">
+            <h1>Aviso de derechos de autor</h1>
+            <p class="subtitle">NinniParki - Aplicación de canciones de cuna para bebés</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. Todos los derechos reservados.</h2>
+                <p>
+                    Esta aplicación y su contenido están protegidos por las leyes de derechos de autor. 
+                    Todos los derechos reservados. Está prohibida la copia, distribución o uso no autorizado.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Contenido de la aplicación</h2>
+                <p>
+                    Toda la música de canciones de cuna, diseños de interfaz de usuario, elementos gráficos, 
+                    logotipos y código de software en la aplicación NinniParki están protegidos por derechos de autor.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Términos de uso</h2>
+                <p>
+                    Esta aplicación se proporciona para uso personal. Las siguientes actividades están prohibidas:
+                </p>
+                <ul>
+                    <li>Copia o distribución no autorizada de la aplicación o su contenido</li>
+                    <li>Uso comercial de la música o el contenido de la aplicación</li>
+                    <li>Ingeniería inversa o modificación de la aplicación</li>
+                    <li>Uso del contenido de la aplicación en otras plataformas</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Contenido de terceros</h2>
+                <p>
+                    Algunas bibliotecas y servicios de terceros utilizados en la aplicación están sujetos a sus propios 
+                    derechos de autor y términos de uso. Estos servicios incluyen:
+                </p>
+                <ul>
+                    <li>Google AdMob - Servicios publicitarios</li>
+                    <li>Firebase - Servicios de análisis</li>
+                    <li>JetBrains Compose Multiplatform - Framework de UI</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Derechos de propiedad intelectual</h2>
+                <p>
+                    El nombre "NinniParki", el logotipo y la marca son propiedad intelectual de esta aplicación. 
+                    El uso no autorizado de estas marcas está prohibido.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contacto</h2>
+                <p>Para preguntas sobre derechos de autor o informes de violación, contáctenos.</p>
+                <p><strong>Nombre de la aplicación:</strong> NinniParki</p>
+                <p><strong>Desarrollador:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>Última actualización: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. Todos los derechos reservados.</p>
+            </div>
         </div>
         
-        <div class="footer">
-            <p>Son Güncelleme: <span class="year">2024</span></p>
-            <p>© <span class="year">2024</span> NinniParki. Tüm hakları saklıdır.</p>
+        <!-- Italian -->
+        <div data-lang="it">
+            <h1>Avviso sul copyright</h1>
+            <p class="subtitle">NinniParki - App di ninne nanne per bambini</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. Tutti i diritti riservati.</h2>
+                <p>
+                    Questa applicazione e il suo contenuto sono protetti dalle leggi sul copyright. 
+                    Tutti i diritti riservati. La copia, la distribuzione o l'uso non autorizzato è vietato.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Contenuto dell'applicazione</h2>
+                <p>
+                    Tutta la musica delle ninne nanne, i progetti dell'interfaccia utente, gli elementi grafici, 
+                    i loghi e il codice software nell'applicazione NinniParki sono protetti da copyright.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Termini di utilizzo</h2>
+                <p>
+                    Questa applicazione è fornita per uso personale. Le seguenti attività sono vietate:
+                </p>
+                <ul>
+                    <li>Copia o distribuzione non autorizzata dell'applicazione o del suo contenuto</li>
+                    <li>Uso commerciale della musica o del contenuto nell'applicazione</li>
+                    <li>Reverse engineering o modifica dell'applicazione</li>
+                    <li>Uso del contenuto dell'applicazione su altre piattaforme</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Contenuto di terze parti</h2>
+                <p>
+                    Alcune librerie e servizi di terze parti utilizzati nell'applicazione sono soggetti ai loro 
+                    diritti d'autore e termini di utilizzo. Questi servizi includono:
+                </p>
+                <ul>
+                    <li>Google AdMob - Servizi pubblicitari</li>
+                    <li>Firebase - Servizi di analisi</li>
+                    <li>JetBrains Compose Multiplatform - Framework UI</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Diritti di proprietà intellettuale</h2>
+                <p>
+                    Il nome "NinniParki", il logo e il marchio sono proprietà intellettuale di questa applicazione. 
+                    L'uso non autorizzato di questi marchi è vietato.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contatto</h2>
+                <p>Per domande sul copyright o segnalazioni di violazione, contattaci.</p>
+                <p><strong>Nome dell'applicazione:</strong> NinniParki</p>
+                <p><strong>Sviluppatore:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>Ultimo aggiornamento: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+        
+        <!-- Russian -->
+        <div data-lang="ru">
+            <h1>Уведомление об авторских правах</h1>
+            <p class="subtitle">NinniParki - Приложение с колыбельными для детей</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. Все права защищены.</h2>
+                <p>
+                    Это приложение и его содержимое защищены законами об авторских правах. 
+                    Все права защищены. Несанкционированное копирование, распространение или использование запрещено.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Содержание приложения</h2>
+                <p>
+                    Вся музыка колыбельных, дизайны пользовательского интерфейса, графические элементы, 
+                    логотипы и программный код в приложении NinniParki защищены авторским правом.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Условия использования</h2>
+                <p>
+                    Это приложение предоставляется для личного использования. Следующие действия запрещены:
+                </p>
+                <ul>
+                    <li>Несанкционированное копирование или распространение приложения или его содержимого</li>
+                    <li>Коммерческое использование музыки или содержимого приложения</li>
+                    <li>Обратная инженерия или модификация приложения</li>
+                    <li>Использование содержимого приложения на других платформах</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Контент третьих лиц</h2>
+                <p>
+                    Некоторые библиотеки и сервисы третьих лиц, используемые в приложении, подчиняются их собственным 
+                    авторским правам и условиям использования. Эти сервисы включают:
+                </p>
+                <ul>
+                    <li>Google AdMob - Рекламные сервисы</li>
+                    <li>Firebase - Аналитические сервисы</li>
+                    <li>JetBrains Compose Multiplatform - UI фреймворк</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Права интеллектуальной собственности</h2>
+                <p>
+                    Название "NinniParki", логотип и торговая марка являются интеллектуальной собственностью этого приложения. 
+                    Несанкционированное использование этих знаков запрещено.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Контакт</h2>
+                <p>По вопросам авторских прав или сообщениям о нарушениях, пожалуйста, свяжитесь с нами.</p>
+                <p><strong>Название приложения:</strong> NinniParki</p>
+                <p><strong>Разработчик:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>Последнее обновление: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. Все права защищены.</p>
+            </div>
+        </div>
+        
+        <!-- Arabic -->
+        <div data-lang="ar">
+            <h1>إشعار حقوق النشر</h1>
+            <p class="subtitle">NinniParki - تطبيق تهويدات للأطفال</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. جميع الحقوق محفوظة.</h2>
+                <p>
+                    هذا التطبيق ومحتواه محمي بموجب قوانين حقوق النشر. 
+                    جميع الحقوق محفوظة. النسخ أو التوزيع أو الاستخدام غير المصرح به محظور.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>محتوى التطبيق</h2>
+                <p>
+                    جميع موسيقى التهويدات وتصاميم واجهة المستخدم والعناصر الرسومية والشعارات 
+                    وكود البرمجيات في تطبيق NinniParki محمية بموجب حقوق النشر.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>شروط الاستخدام</h2>
+                <p>
+                    يتم توفير هذا التطبيق للاستخدام الشخصي. الأنشطة التالية محظورة:
+                </p>
+                <ul>
+                    <li>النسخ أو التوزيع غير المصرح به للتطبيق أو محتواه</li>
+                    <li>الاستخدام التجاري للموسيقى أو المحتوى في التطبيق</li>
+                    <li>الهندسة العكسية أو تعديل التطبيق</li>
+                    <li>استخدام محتوى التطبيق على منصات أخرى</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>محتوى الطرف الثالث</h2>
+                <p>
+                    بعض المكتبات والخدمات الخاصة بأطراف ثالثة المستخدمة في التطبيق تخضع لحقوق النشر الخاصة بها 
+                    وشروط الاستخدام. تتضمن هذه الخدمات:
+                </p>
+                <ul>
+                    <li>Google AdMob - خدمات الإعلانات</li>
+                    <li>Firebase - خدمات التحليلات</li>
+                    <li>JetBrains Compose Multiplatform - إطار واجهة المستخدم</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>حقوق الملكية الفكرية</h2>
+                <p>
+                    اسم "NinniParki" والشعار والعلامة التجارية هي ملكية فكرية لهذا التطبيق. 
+                    الاستخدام غير المصرح به لهذه العلامات محظور.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>اتصل بنا</h2>
+                <p>للأسئلة المتعلقة بحقوق النشر أو تقارير الانتهاك، يرجى الاتصال بنا.</p>
+                <p><strong>اسم التطبيق:</strong> NinniParki</p>
+                <p><strong>المطور:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>آخر تحديث: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+        
+        <!-- Chinese -->
+        <div data-lang="zh">
+            <h1>版权声明</h1>
+            <p class="subtitle">NinniParki - 婴儿摇篮曲应用</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. 保留所有权利。</h2>
+                <p>
+                    本应用程序及其内容受版权法保护。 
+                    保留所有权利。禁止未经授权的复制、分发或使用。
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>应用程序内容</h2>
+                <p>
+                    NinniParki 应用程序中的所有摇篮曲音乐、用户界面设计、图形元素、 
+                    徽标和软件代码均受版权保护。
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>使用条款</h2>
+                <p>
+                    本应用程序仅供个人使用。禁止以下活动：
+                </p>
+                <ul>
+                    <li>未经授权复制或分发应用程序或其内容</li>
+                    <li>商业使用应用程序中的音乐或内容</li>
+                    <li>对应用程序进行逆向工程或修改</li>
+                    <li>在其他平台上使用应用程序内容</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>第三方内容</h2>
+                <p>
+                    应用程序中使用的某些第三方库和服务受其自己的版权和使用条款约束。这些服务包括：
+                </p>
+                <ul>
+                    <li>Google AdMob - 广告服务</li>
+                    <li>Firebase - 分析服务</li>
+                    <li>JetBrains Compose Multiplatform - UI框架</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>知识产权</h2>
+                <p>
+                    "NinniParki" 名称、徽标和品牌是本应用程序的知识产权。 
+                    禁止未经授权使用这些标记。
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>联系我们</h2>
+                <p>如有版权问题或违规报告，请联系我们。</p>
+                <p><strong>应用程序名称:</strong> NinniParki</p>
+                <p><strong>开发者:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>最后更新: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. 保留所有权利。</p>
+            </div>
+        </div>
+        
+        <!-- Japanese -->
+        <div data-lang="ja">
+            <h1>著作権表示</h1>
+            <p class="subtitle">NinniParki - ベビー子守唄アプリ</p>
+            
+            <div class="section">
+                <h2>© <span class="year">2024</span> NinniParki. 無断転載禁止。</h2>
+                <p>
+                    このアプリケーションとそのコンテンツは著作権法により保護されています。 
+                    すべての権利は留保されています。無断での複製、配布、または使用は禁止されています。
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>アプリケーションコンテンツ</h2>
+                <p>
+                    NinniParkiアプリケーション内のすべての子守唄音楽、ユーザーインターフェースデザイン、 
+                    グラフィック要素、ロゴ、およびソフトウェアコードは著作権により保護されています。
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>利用規約</h2>
+                <p>
+                    このアプリケーションは個人利用のために提供されています。以下の活動は禁止されています：
+                </p>
+                <ul>
+                    <li>アプリケーションまたはそのコンテンツの無断複製または配布</li>
+                    <li>アプリケーション内の音楽またはコンテンツの商業的使用</li>
+                    <li>アプリケーションのリバースエンジニアリングまたは変更</li>
+                    <li>他のプラットフォームでのアプリケーションコンテンツの使用</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>サードパーティコンテンツ</h2>
+                <p>
+                    アプリケーションで使用される一部のサードパーティライブラリとサービスは、それら自身の 
+                    著作権と利用規約に従います。これらのサービスには以下が含まれます：
+                </p>
+                <ul>
+                    <li>Google AdMob - 広告サービス</li>
+                    <li>Firebase - 分析サービス</li>
+                    <li>JetBrains Compose Multiplatform - UIフレームワーク</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>知的財産権</h2>
+                <p>
+                    "NinniParki"という名前、ロゴ、およびブランドは、このアプリケーションの知的財産です。 
+                    これらのマークの無断使用は禁止されています。
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>お問い合わせ</h2>
+                <p>著作権に関する質問や違反報告については、お問い合わせください。</p>
+                <p><strong>アプリケーション名:</strong> NinniParki</p>
+                <p><strong>開発者:</strong> NinniParki Development Team</p>
+            </div>
+            
+            <div class="footer">
+                <p>最終更新: <span class="year">2024</span></p>
+                <p>© <span class="year">2024</span> NinniParki. 無断転載禁止。</p>
+            </div>
         </div>
     </div>
+    
+    <script>
+        const langSelect = document.getElementById('langSelect');
+        const langElements = document.querySelectorAll('[data-lang]');
+        const body = document.body;
+        const html = document.documentElement;
+        
+        // Browser dilini algıla
+        const browserLang = navigator.language.split('-')[0];
+        const savedLang = localStorage.getItem('copyrightLang') || browserLang || 'tr';
+        
+        // RTL dilleri
+        const rtlLangs = ['ar'];
+        
+        function setLanguage(lang) {
+            // Tüm dil öğelerini gizle
+            langElements.forEach(el => el.classList.remove('active'));
+            
+            // Seçilen dili göster
+            const activeLang = document.querySelector(`[data-lang="${lang}"]`);
+            if (activeLang) {
+                activeLang.classList.add('active');
+                langSelect.value = lang;
+                
+                // HTML lang attribute güncelle
+                html.setAttribute('lang', lang);
+                
+                // RTL kontrolü
+                if (rtlLangs.includes(lang)) {
+                    body.setAttribute('dir', 'rtl');
+                } else {
+                    body.removeAttribute('dir');
+                }
+                
+                // LocalStorage'a kaydet
+                localStorage.setItem('copyrightLang', lang);
+            }
+        }
+        
+        // Dil değişikliği eventi
+        langSelect.addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+        });
+        
+        // Sayfa yüklendiğinde kayıtlı veya tarayıcı dilini ayarla
+        setLanguage(savedLang);
+    </script>
 </body>
 </html>
