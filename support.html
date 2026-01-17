@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - NinniParki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+        }
+        
+        .language-selector {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+        
+        .language-selector select {
+            padding: 10px 15px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 1em;
+            background: white;
+            color: #333;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s;
+        }
+        
+        .language-selector select:hover {
+            background: #f8f9fa;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .section ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+        }
+        
+        .faq-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .faq-item h3 {
+            color: #667eea;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+        
+        .email-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        [data-lang] {
+            display: none;
+        }
+        
+        [data-lang].active {
+            display: block;
+        }
+        
+        body[dir="rtl"] {
+            direction: rtl;
+        }
+        
+        body[dir="rtl"] .section ul {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+        
+        body[dir="rtl"] .language-selector {
+            text-align: left;
+        }
+        
+        body[dir="rtl"] .faq-item {
+            text-align: right;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <select id="langSelect">
+                <option value="tr">Türkçe</option>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+                <option value="it">Italiano</option>
+                <option value="ru">Русский</option>
+                <option value="ar">العربية</option>
+                <option value="zh">中文</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+        
+        <!-- Turkish -->
+        <div data-lang="tr" class="active">
+            <h1>Destek ve Yardım</h1>
+            <p class="subtitle">NinniParki - Bebek Ninni Uygulaması</p>
+            
+            <div class="section">
+                <h2>Hoş Geldiniz</h2>
+                <p>
+                    NinniParki uygulaması ile ilgili sorularınız, sorunlarınız veya önerileriniz için buradayız. 
+                    Size en iyi şekilde yardımcı olmak için çalışıyoruz.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Sıkça Sorulan Sorular</h2>
+                
+                <div class="faq-item">
+                    <h3>Uygulama nasıl kullanılır?</h3>
+                    <p>
+                        Uygulamayı açtığınızda ninni listesini göreceksiniz. İstediğiniz ninniyi seçerek 
+                        çalıştırabilir, duraklatabilir, bir sonraki veya önceki ninniye geçebilirsiniz. 
+                        Shuffle ve repeat özellikleri ile müzikleri karıştırabilir veya tekrar ettirebilirsiniz.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Uygulama ücretsiz mi?</h3>
+                    <p>
+                        Evet, NinniParki tamamen ücretsizdir. Tüm ninniler ve özellikler ücretsiz kullanılabilir.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Kaç ninni var?</h3>
+                    <p>
+                        Uygulamada toplam 18 farklı ninni bulunmaktadır. Bu ninniler çocukların uykuya 
+                        dalmasına yardımcı olmak için özel olarak seçilmiştir.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Hangi dilleri destekliyor?</h3>
+                    <p>
+                        Uygulama Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Rusça, 
+                        Arapça, Çince ve Japonca dillerini desteklemektedir.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Uygulama arka planda çalışıyor mu?</h3>
+                    <p>
+                        Evet, uygulamayı kapattıktan sonra bile müzik çalmaya devam eder. Telefonunuzun 
+                        kilit ekranından da müziği kontrol edebilirsiniz.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Reklamları kaldırabilir miyim?</h3>
+                    <p>
+                        Şu anda uygulama tamamen ücretsizdir ve reklam geliri ile desteklenmektedir. 
+                        Reklamları kaldırma özelliği gelecek güncellemelerde eklenebilir.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Sorun Bildirimi</h2>
+                <p>
+                    Uygulamada bir hata ile karşılaştıysanız veya teknik bir sorun yaşıyorsanız, 
+                    lütfen aşağıdaki iletişim bilgilerinden bize ulaşın. Sorunu hızlıca çözmek için 
+                    şunları paylaşabilirsiniz:
+                </p>
+                <ul>
+                    <li>Cihazınızın modeli ve işletim sistemi versiyonu</li>
+                    <li>Karşılaştığınız hatanın açıklaması</li>
+                    <li>Hatanın ne zaman ve nasıl oluştuğu</li>
+                    <li>Ekran görüntüsü (varsa)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Öneriler ve Geri Bildirim</h2>
+                <p>
+                    Uygulamamızı geliştirmek için sizin geri bildirimlerinize ihtiyacımız var. 
+                    Yeni özellik önerileri, iyileştirme fikirleri veya genel görüşlerinizi 
+                    paylaşmak için bizimle iletişime geçebilirsiniz.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>İletişim</h2>
+                <p>Herhangi bir sorunuz veya sorununuz için lütfen bizimle iletişime geçin:</p>
+                <p><strong>E-posta:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>Uygulama Adı:</strong> NinniParki</p>
+                <p><strong>Geliştirici:</strong> MobilectApps</p>
+                <p><strong>Konu:</strong> Lütfen e-posta konu satırında "NinniParki Desteği" yazın</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+        
+        <!-- English -->
+        <div data-lang="en">
+            <h1>Support & Help</h1>
+            <p class="subtitle">NinniParki - Baby Lullaby App</p>
+            
+            <div class="section">
+                <h2>Welcome</h2>
+                <p>
+                    We are here to help you with any questions, issues, or suggestions regarding the NinniParki app. 
+                    We are working to assist you in the best way possible.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>How do I use the app?</h3>
+                    <p>
+                        When you open the app, you will see the lullaby list. You can select any lullaby you want, 
+                        play, pause, or skip to the next or previous lullaby. You can shuffle or repeat music 
+                        using the shuffle and repeat features.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Is the app free?</h3>
+                    <p>
+                        Yes, NinniParki is completely free. All lullabies and features can be used free of charge.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How many lullabies are there?</h3>
+                    <p>
+                        There are a total of 18 different lullabies in the app. These lullabies have been 
+                        specially selected to help children fall asleep.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Which languages are supported?</h3>
+                    <p>
+                        The app supports Turkish, English, German, French, Spanish, Italian, Russian, 
+                        Arabic, Chinese, and Japanese.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Does the app work in the background?</h3>
+                    <p>
+                        Yes, music continues to play even after you close the app. You can also control 
+                        the music from your phone's lock screen.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can I remove ads?</h3>
+                    <p>
+                        Currently, the app is completely free and supported by ad revenue. An ad removal 
+                        feature may be added in future updates.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Report an Issue</h2>
+                <p>
+                    If you have encountered an error in the app or are experiencing a technical issue, 
+                    please contact us using the contact information below. To resolve the issue quickly, 
+                    you can share:
+                </p>
+                <ul>
+                    <li>Your device model and operating system version</li>
+                    <li>Description of the error you encountered</li>
+                    <li>When and how the error occurred</li>
+                    <li>Screenshot (if available)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Suggestions and Feedback</h2>
+                <p>
+                    We need your feedback to improve our app. You can contact us to share new feature 
+                    suggestions, improvement ideas, or general comments.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>Please contact us for any questions or issues:</p>
+                <p><strong>Email:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>Application Name:</strong> NinniParki</p>
+                <p><strong>Developer:</strong> MobilectApps</p>
+                <p><strong>Subject:</strong> Please write "NinniParki Support" in the email subject line</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <!-- German -->
+        <div data-lang="de">
+            <h1>Support & Hilfe</h1>
+            <p class="subtitle">NinniParki - Baby-Schlaflied-App</p>
+            
+            <div class="section">
+                <h2>Willkommen</h2>
+                <p>
+                    Wir sind hier, um Ihnen bei Fragen, Problemen oder Anregungen zur NinniParki-App zu helfen. 
+                    Wir arbeiten daran, Ihnen bestmöglich zu helfen.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Häufig gestellte Fragen</h2>
+                
+                <div class="faq-item">
+                    <h3>Wie verwende ich die App?</h3>
+                    <p>
+                        Wenn Sie die App öffnen, sehen Sie die Schlafliedliste. Sie können jedes gewünschte 
+                        Schlaflied auswählen, abspielen, pausieren oder zum nächsten oder vorherigen Schlaflied 
+                        wechseln. Sie können Musik mit den Shuffle- und Repeat-Funktionen mischen oder wiederholen.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Ist die App kostenlos?</h3>
+                    <p>
+                        Ja, NinniParki ist völlig kostenlos. Alle Schlaflieder und Funktionen können kostenlos verwendet werden.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Wie viele Schlaflieder gibt es?</h3>
+                    <p>
+                        Es gibt insgesamt 18 verschiedene Schlaflieder in der App. Diese Schlaflieder wurden 
+                        speziell ausgewählt, um Kindern beim Einschlafen zu helfen.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Welche Sprachen werden unterstützt?</h3>
+                    <p>
+                        Die App unterstützt Türkisch, Englisch, Deutsch, Französisch, Spanisch, Italienisch, 
+                        Russisch, Arabisch, Chinesisch und Japanisch.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Funktioniert die App im Hintergrund?</h3>
+                    <p>
+                        Ja, die Musik läuft weiter, auch nachdem Sie die App geschlossen haben. Sie können 
+                        die Musik auch vom Sperrbildschirm Ihres Telefons steuern.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Kann ich Werbung entfernen?</h3>
+                    <p>
+                        Derzeit ist die App völlig kostenlos und wird durch Werbeeinnahmen unterstützt. 
+                        Eine Funktion zum Entfernen von Werbung kann in zukünftigen Updates hinzugefügt werden.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Problem melden</h2>
+                <p>
+                    Wenn Sie einen Fehler in der App gefunden haben oder ein technisches Problem haben, 
+                    kontaktieren Sie uns bitte über die untenstehenden Kontaktinformationen. Um das Problem 
+                    schnell zu lösen, können Sie folgendes mitteilen:
+                </p>
+                <ul>
+                    <li>Ihr Gerätemodell und Betriebssystemversion</li>
+                    <li>Beschreibung des aufgetretenen Fehlers</li>
+                    <li>Wann und wie der Fehler aufgetreten ist</li>
+                    <li>Screenshot (falls vorhanden)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Vorschläge und Feedback</h2>
+                <p>
+                    Wir brauchen Ihr Feedback, um unsere App zu verbessern. Sie können uns kontaktieren, 
+                    um neue Funktionsvorschläge, Verbesserungsideen oder allgemeine Kommentare zu teilen.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Kontakt</h2>
+                <p>Bitte kontaktieren Sie uns bei Fragen oder Problemen:</p>
+                <p><strong>E-Mail:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>Anwendungsname:</strong> NinniParki</p>
+                <p><strong>Entwickler:</strong> MobilectApps</p>
+                <p><strong>Betreff:</strong> Bitte schreiben Sie "NinniParki Support" in die Betreffzeile der E-Mail</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+        
+        <!-- French -->
+        <div data-lang="fr">
+            <h1>Support et Aide</h1>
+            <p class="subtitle">NinniParki - Application de berceuse pour bébé</p>
+            
+            <div class="section">
+                <h2>Bienvenue</h2>
+                <p>
+                    Nous sommes là pour vous aider avec toutes vos questions, problèmes ou suggestions concernant 
+                    l'application NinniParki. Nous travaillons pour vous aider de la meilleure façon possible.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Questions fréquemment posées</h2>
+                
+                <div class="faq-item">
+                    <h3>Comment utiliser l'application?</h3>
+                    <p>
+                        Lorsque vous ouvrez l'application, vous verrez la liste des berceuses. Vous pouvez sélectionner 
+                        n'importe quelle berceuse, la lire, la mettre en pause ou passer à la berceuse suivante ou 
+                        précédente. Vous pouvez mélanger ou répéter la musique à l'aide des fonctionnalités shuffle et repeat.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>L'application est-elle gratuite?</h3>
+                    <p>
+                        Oui, NinniParki est entièrement gratuit. Toutes les berceuses et fonctionnalités peuvent être utilisées gratuitement.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Combien de berceuses y a-t-il?</h3>
+                    <p>
+                        Il y a un total de 18 berceuses différentes dans l'application. Ces berceuses ont été 
+                        spécialement sélectionnées pour aider les enfants à s'endormir.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quelles langues sont prises en charge?</h3>
+                    <p>
+                        L'application prend en charge le turc, l'anglais, l'allemand, le français, l'espagnol, 
+                        l'italien, le russe, l'arabe, le chinois et le japonais.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>L'application fonctionne-t-elle en arrière-plan?</h3>
+                    <p>
+                        Oui, la musique continue de jouer même après avoir fermé l'application. Vous pouvez 
+                        également contrôler la musique depuis l'écran de verrouillage de votre téléphone.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Puis-je supprimer les publicités?</h3>
+                    <p>
+                        Actuellement, l'application est entièrement gratuite et financée par les revenus publicitaires. 
+                        Une fonctionnalité de suppression des publicités peut être ajoutée dans les futures mises à jour.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Signaler un problème</h2>
+                <p>
+                    Si vous avez rencontré une erreur dans l'application ou si vous rencontrez un problème technique, 
+                    veuillez nous contacter en utilisant les informations de contact ci-dessous. Pour résoudre le problème 
+                    rapidement, vous pouvez partager:
+                </p>
+                <ul>
+                    <li>Le modèle de votre appareil et la version du système d'exploitation</li>
+                    <li>Description de l'erreur rencontrée</li>
+                    <li>Quand et comment l'erreur s'est produite</li>
+                    <li>Capture d'écran (si disponible)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Suggestions et commentaires</h2>
+                <p>
+                    Nous avons besoin de vos commentaires pour améliorer notre application. Vous pouvez nous contacter 
+                    pour partager des suggestions de nouvelles fonctionnalités, des idées d'amélioration ou des commentaires généraux.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>Veuillez nous contacter pour toute question ou problème:</p>
+                <p><strong>Email:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>Nom de l'application:</strong> NinniParki</p>
+                <p><strong>Développeur:</strong> MobilectApps</p>
+                <p><strong>Sujet:</strong> Veuillez écrire "NinniParki Support" dans la ligne d'objet de l'email</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. Tous droits réservés.</p>
+            </div>
+        </div>
+        
+        <!-- Spanish -->
+        <div data-lang="es">
+            <h1>Soporte y Ayuda</h1>
+            <p class="subtitle">NinniParki - Aplicación de canciones de cuna para bebés</p>
+            
+            <div class="section">
+                <h2>Bienvenido</h2>
+                <p>
+                    Estamos aquí para ayudarte con cualquier pregunta, problema o sugerencia sobre la aplicación NinniParki. 
+                    Estamos trabajando para ayudarte de la mejor manera posible.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Preguntas frecuentes</h2>
+                
+                <div class="faq-item">
+                    <h3>¿Cómo uso la aplicación?</h3>
+                    <p>
+                        Cuando abras la aplicación, verás la lista de canciones de cuna. Puedes seleccionar cualquier 
+                        canción de cuna que desees, reproducir, pausar o saltar a la siguiente o anterior canción de cuna. 
+                        Puedes mezclar o repetir música usando las funciones de shuffle y repeat.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿La aplicación es gratuita?</h3>
+                    <p>
+                        Sí, NinniParki es completamente gratuita. Todas las canciones de cuna y funciones se pueden usar gratis.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Cuántas canciones de cuna hay?</h3>
+                    <p>
+                        Hay un total de 18 canciones de cuna diferentes en la aplicación. Estas canciones de cuna han sido 
+                        seleccionadas especialmente para ayudar a los niños a conciliar el sueño.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Qué idiomas son compatibles?</h3>
+                    <p>
+                        La aplicación es compatible con turco, inglés, alemán, francés, español, italiano, ruso, 
+                        árabe, chino y japonés.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿La aplicación funciona en segundo plano?</h3>
+                    <p>
+                        Sí, la música continúa reproduciéndose incluso después de cerrar la aplicación. También puedes 
+                        controlar la música desde la pantalla de bloqueo de tu teléfono.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Puedo eliminar los anuncios?</h3>
+                    <p>
+                        Actualmente, la aplicación es completamente gratuita y se financia con ingresos publicitarios. 
+                        Se puede agregar una función para eliminar anuncios en futuras actualizaciones.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Reportar un problema</h2>
+                <p>
+                    Si has encontrado un error en la aplicación o estás experimentando un problema técnico, por favor 
+                    contáctanos usando la información de contacto a continuación. Para resolver el problema rápidamente, puedes compartir:
+                </p>
+                <ul>
+                    <li>El modelo de tu dispositivo y la versión del sistema operativo</li>
+                    <li>Descripción del error que encontraste</li>
+                    <li>Cuándo y cómo ocurrió el error</li>
+                    <li>Captura de pantalla (si está disponible)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Sugerencias y comentarios</h2>
+                <p>
+                    Necesitamos tus comentarios para mejorar nuestra aplicación. Puedes contactarnos para compartir 
+                    sugerencias de nuevas funciones, ideas de mejora o comentarios generales.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contacto</h2>
+                <p>Por favor contáctanos para cualquier pregunta o problema:</p>
+                <p><strong>Correo electrónico:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>Nombre de la aplicación:</strong> NinniParki</p>
+                <p><strong>Desarrollador:</strong> MobilectApps</p>
+                <p><strong>Asunto:</strong> Por favor escribe "NinniParki Support" en la línea de asunto del correo</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        
+        <!-- Italian -->
+        <div data-lang="it">
+            <h1>Supporto e Aiuto</h1>
+            <p class="subtitle">NinniParki - App di ninne nanne per bambini</p>
+            
+            <div class="section">
+                <h2>Benvenuto</h2>
+                <p>
+                    Siamo qui per aiutarti con qualsiasi domanda, problema o suggerimento riguardo all'app NinniParki. 
+                    Stiamo lavorando per assisterti nel modo migliore possibile.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Domande frequenti</h2>
+                
+                <div class="faq-item">
+                    <h3>Come uso l'app?</h3>
+                    <p>
+                        Quando apri l'app, vedrai l'elenco delle ninne nanne. Puoi selezionare qualsiasi ninna nanna che desideri, 
+                        riprodurla, metterla in pausa o passare alla ninna nanna successiva o precedente. Puoi mescolare o ripetere 
+                        la musica utilizzando le funzioni shuffle e repeat.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>L'app è gratuita?</h3>
+                    <p>
+                        Sì, NinniParki è completamente gratuito. Tutte le ninne nanne e le funzionalità possono essere utilizzate gratuitamente.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quante ninne nanne ci sono?</h3>
+                    <p>
+                        Ci sono un totale di 18 ninne nanne diverse nell'app. Queste ninne nanne sono state 
+                        selezionate appositamente per aiutare i bambini ad addormentarsi.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quali lingue sono supportate?</h3>
+                    <p>
+                        L'app supporta turco, inglese, tedesco, francese, spagnolo, italiano, russo, 
+                        arabo, cinese e giapponese.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>L'app funziona in background?</h3>
+                    <p>
+                        Sì, la musica continua a riprodursi anche dopo aver chiuso l'app. Puoi anche controllare 
+                        la musica dallo schermo di blocco del tuo telefono.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Posso rimuovere gli annunci?</h3>
+                    <p>
+                        Attualmente, l'app è completamente gratuita e supportata da entrate pubblicitarie. 
+                        Una funzione per rimuovere gli annunci può essere aggiunta negli aggiornamenti futuri.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Segnala un problema</h2>
+                <p>
+                    Se hai riscontrato un errore nell'app o stai riscontrando un problema tecnico, contattaci 
+                    utilizzando le informazioni di contatto qui sotto. Per risolvere il problema rapidamente, puoi condividere:
+                </p>
+                <ul>
+                    <li>Il modello del tuo dispositivo e la versione del sistema operativo</li>
+                    <li>Descrizione dell'errore riscontrato</li>
+                    <li>Quando e come si è verificato l'errore</li>
+                    <li>Screenshot (se disponibile)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Suggerimenti e feedback</h2>
+                <p>
+                    Abbiamo bisogno del tuo feedback per migliorare la nostra app. Puoi contattarci per condividere 
+                    suggerimenti per nuove funzionalità, idee di miglioramento o commenti generali.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contatto</h2>
+                <p>Per qualsiasi domanda o problema, contattaci:</p>
+                <p><strong>Email:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>Nome dell'applicazione:</strong> NinniParki</p>
+                <p><strong>Sviluppatore:</strong> MobilectApps</p>
+                <p><strong>Oggetto:</strong> Si prega di scrivere "NinniParki Support" nella riga dell'oggetto dell'email</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+        
+        <!-- Russian -->
+        <div data-lang="ru">
+            <h1>Поддержка и помощь</h1>
+            <p class="subtitle">NinniParki - Приложение с колыбельными для детей</p>
+            
+            <div class="section">
+                <h2>Добро пожаловать</h2>
+                <p>
+                    Мы здесь, чтобы помочь вам с любыми вопросами, проблемами или предложениями относительно приложения NinniParki. 
+                    Мы работаем, чтобы оказать вам наилучшую помощь.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Часто задаваемые вопросы</h2>
+                
+                <div class="faq-item">
+                    <h3>Как использовать приложение?</h3>
+                    <p>
+                        Когда вы откроете приложение, вы увидите список колыбельных. Вы можете выбрать любую колыбельную, 
+                        воспроизвести, поставить на паузу или перейти к следующей или предыдущей колыбельной. Вы можете 
+                        перемешивать или повторять музыку, используя функции shuffle и repeat.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Приложение бесплатное?</h3>
+                    <p>
+                        Да, NinniParki полностью бесплатен. Все колыбельные и функции можно использовать бесплатно.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Сколько колыбельных есть?</h3>
+                    <p>
+                        В приложении всего 18 различных колыбельных. Эти колыбельные были специально 
+                        отобраны, чтобы помочь детям заснуть.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Какие языки поддерживаются?</h3>
+                    <p>
+                        Приложение поддерживает турецкий, английский, немецкий, французский, испанский, итальянский, 
+                        русский, арабский, китайский и японский языки.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Приложение работает в фоновом режиме?</h3>
+                    <p>
+                        Да, музыка продолжает играть даже после закрытия приложения. Вы также можете управлять 
+                        музыкой с экрана блокировки вашего телефона.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Могу ли я удалить рекламу?</h3>
+                    <p>
+                        В настоящее время приложение полностью бесплатно и поддерживается доходом от рекламы. 
+                        Функция удаления рекламы может быть добавлена в будущих обновлениях.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Сообщить о проблеме</h2>
+                <p>
+                    Если вы столкнулись с ошибкой в приложении или испытываете техническую проблему, пожалуйста, 
+                    свяжитесь с нами, используя контактную информацию ниже. Чтобы быстро решить проблему, вы можете поделиться:
+                </p>
+                <ul>
+                    <li>Модель вашего устройства и версия операционной системы</li>
+                    <li>Описание ошибки, с которой вы столкнулись</li>
+                    <li>Когда и как произошла ошибка</li>
+                    <li>Скриншот (если доступен)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Предложения и отзывы</h2>
+                <p>
+                    Нам нужны ваши отзывы, чтобы улучшить наше приложение. Вы можете связаться с нами, чтобы поделиться 
+                    предложениями новых функций, идеями по улучшению или общими комментариями.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Контакт</h2>
+                <p>Пожалуйста, свяжитесь с нами по любым вопросам или проблемам:</p>
+                <p><strong>Электронная почта:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>Название приложения:</strong> NinniParki</p>
+                <p><strong>Разработчик:</strong> MobilectApps</p>
+                <p><strong>Тема:</strong> Пожалуйста, напишите "NinniParki Support" в теме письма</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. Все права защищены.</p>
+            </div>
+        </div>
+        
+        <!-- Arabic -->
+        <div data-lang="ar">
+            <h1>الدعم والمساعدة</h1>
+            <p class="subtitle">NinniParki - تطبيق تهويدات للأطفال</p>
+            
+            <div class="section">
+                <h2>مرحباً</h2>
+                <p>
+                    نحن هنا لمساعدتك في أي أسئلة أو مشاكل أو اقتراحات تتعلق بتطبيق NinniParki. 
+                    نحن نعمل على مساعدتك بأفضل طريقة ممكنة.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h3>كيف أستخدم التطبيق؟</h3>
+                    <p>
+                        عند فتح التطبيق، سترى قائمة التهويدات. يمكنك اختيار أي تهويدة تريدها، تشغيلها، 
+                        إيقافها مؤقتاً، أو التبديل إلى التهويدة التالية أو السابقة. يمكنك خلط أو تكرار 
+                        الموسيقى باستخدام ميزات shuffle و repeat.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>هل التطبيق مجاني؟</h3>
+                    <p>
+                        نعم، NinniParki مجاني بالكامل. يمكن استخدام جميع التهويدات والميزات مجاناً.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>كم عدد التهويدات الموجودة؟</h3>
+                    <p>
+                        هناك إجمالي 18 تهويدة مختلفة في التطبيق. تم اختيار هذه التهويدات خصيصاً 
+                        لمساعدة الأطفال على النوم.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>ما هي اللغات المدعومة؟</h3>
+                    <p>
+                        يدعم التطبيق التركية والإنجليزية والألمانية والفرنسية والإسبانية والإيطالية والروسية 
+                        والعربية والصينية واليابانية.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>هل يعمل التطبيق في الخلفية؟</h3>
+                    <p>
+                        نعم، تستمر الموسيقى في التشغيل حتى بعد إغلاق التطبيق. يمكنك أيضاً التحكم في 
+                        الموسيقى من شاشة القفل لهاتفك.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>هل يمكنني إزالة الإعلانات؟</h3>
+                    <p>
+                        حالياً، التطبيق مجاني بالكامل ومدعوم بإيرادات الإعلانات. قد تتم إضافة ميزة 
+                        إزالة الإعلانات في التحديثات المستقبلية.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>الإبلاغ عن مشكلة</h2>
+                <p>
+                    إذا واجهت خطأ في التطبيق أو كنت تواجه مشكلة تقنية، يرجى الاتصال بنا باستخدام 
+                    معلومات الاتصال أدناه. لحل المشكلة بسرعة، يمكنك مشاركة:
+                </p>
+                <ul>
+                    <li>طراز جهازك وإصدار نظام التشغيل</li>
+                    <li>وصف الخطأ الذي واجهته</li>
+                    <li>متى وكيف حدث الخطأ</li>
+                    <li>لقطة شاشة (إن وجدت)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>الاقتراحات والملاحظات</h2>
+                <p>
+                    نحتاج إلى ملاحظاتك لتحسين تطبيقنا. يمكنك الاتصال بنا لمشاركة اقتراحات ميزات جديدة 
+                    أو أفكار للتحسين أو تعليقات عامة.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>اتصل بنا</h2>
+                <p>يرجى الاتصال بنا لأي أسئلة أو مشاكل:</p>
+                <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>اسم التطبيق:</strong> NinniParki</p>
+                <p><strong>المطور:</strong> MobilectApps</p>
+                <p><strong>الموضوع:</strong> يرجى كتابة "NinniParki Support" في سطر موضوع البريد الإلكتروني</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+        
+        <!-- Chinese -->
+        <div data-lang="zh">
+            <h1>支持和帮助</h1>
+            <p class="subtitle">NinniParki - 婴儿摇篮曲应用</p>
+            
+            <div class="section">
+                <h2>欢迎</h2>
+                <p>
+                    我们在这里帮助您解决有关 NinniParki 应用程序的任何问题、问题或建议。 
+                    我们正在努力以最好的方式为您提供帮助。
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>常见问题</h2>
+                
+                <div class="faq-item">
+                    <h3>如何使用应用程序？</h3>
+                    <p>
+                        当您打开应用程序时，您会看到摇篮曲列表。您可以选择任何想要的摇篮曲， 
+                        播放、暂停或跳转到下一首或上一首摇篮曲。您可以使用 shuffle 和 repeat 
+                        功能来混合或重复播放音乐。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>应用程序是免费的吗？</h3>
+                    <p>
+                        是的，NinniParki 完全免费。所有摇篮曲和功能都可以免费使用。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>有多少首摇篮曲？</h3>
+                    <p>
+                        应用程序中总共有 18 首不同的摇篮曲。这些摇篮曲是专门挑选的， 
+                        以帮助 children 入睡。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>支持哪些语言？</h3>
+                    <p>
+                        应用程序支持土耳其语、英语、德语、法语、西班牙语、意大利语、俄语、 
+                        阿拉伯语、中文和日语。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>应用程序可以在后台运行吗？</h3>
+                    <p>
+                        是的，即使关闭应用程序后，音乐也会继续播放。您也可以从手机 
+                        的锁定屏幕控制音乐。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>我可以移除广告吗？</h3>
+                    <p>
+                        目前，应用程序完全免费，由广告收入支持。在未来的更新中可能会添加移除广告的功能。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>报告问题</h2>
+                <p>
+                    如果您在应用程序中遇到错误或遇到技术问题，请使用下面的联系信息联系我们。 
+                    为了快速解决问题，您可以分享：
+                </p>
+                <ul>
+                    <li>您的设备型号和操作系统版本</li>
+                    <li>遇到的错误的描述</li>
+                    <li>错误发生的时间和方式</li>
+                    <li>截图（如果有）</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>建议和反馈</h2>
+                <p>
+                    我们需要您的反馈来改进我们的应用程序。您可以联系我们分享新功能建议、 
+                    改进想法或一般评论。
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>联系我们</h2>
+                <p>如有任何问题或问题，请联系我们：</p>
+                <p><strong>电子邮件:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>应用程序名称:</strong> NinniParki</p>
+                <p><strong>开发者:</strong> MobilectApps</p>
+                <p><strong>主题:</strong> 请在电子邮件主题行中写上 "NinniParki Support"</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. 保留所有权利。</p>
+            </div>
+        </div>
+        
+        <!-- Japanese -->
+        <div data-lang="ja">
+            <h1>サポートとヘルプ</h1>
+            <p class="subtitle">NinniParki - ベビー子守唄アプリ</p>
+            
+            <div class="section">
+                <h2>ようこそ</h2>
+                <p>
+                    NinniParkiアプリに関するご質問、問題、またはご提案については、お気軽にお問い合わせください。 
+                    できる限り最善の方法でお手伝いいたします。
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>よくある質問</h2>
+                
+                <div class="faq-item">
+                    <h3>アプリの使い方は？</h3>
+                    <p>
+                        アプリを開くと、子守唄のリストが表示されます。お好みの子守唄を選択して再生、一時停止、 
+                        または次の/前の子守唄に移動できます。シャッフル機能とリピート機能を使用して音楽を 
+                        シャッフルまたは繰り返し再生できます。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>アプリは無料ですか？</h3>
+                    <p>
+                        はい、NinniParkiは完全に無料です。すべての子守唄と機能を無料で使用できます。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>子守唄はいくつありますか？</h3>
+                    <p>
+                        アプリには合計18種類の異なる子守唄があります。これらの子守唄は、子供が眠りにつくのを 
+                        助けるために特別に選ばれました。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>どの言語がサポートされていますか？</h3>
+                    <p>
+                        アプリは、トルコ語、英語、ドイツ語、フランス語、スペイン語、イタリア語、ロシア語、 
+                        アラビア語、中国語、日本語をサポートしています。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>アプリはバックグラウンドで動作しますか？</h3>
+                    <p>
+                        はい、アプリを閉じた後でも音楽は再生され続けます。電話のロック画面からも 
+                        音楽を制御できます。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>広告を削除できますか？</h3>
+                    <p>
+                        現在、アプリは完全に無料で、広告収入によってサポートされています。 
+                        広告を削除する機能は、今後のアップデートで追加される可能性があります。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>問題を報告</h2>
+                <p>
+                    アプリでエラーに遭遇した場合、または技術的な問題が発生している場合は、 
+                    以下の連絡先情報を使用してお問い合わせください。問題を迅速に解決するために、以下を共有できます：
+                </p>
+                <ul>
+                    <li>デバイスのモデルとオペレーティングシステムのバージョン</li>
+                    <li>遭遇したエラーの説明</li>
+                    <li>エラーが発生した時期と方法</li>
+                    <li>スクリーンショット（利用可能な場合）</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>提案とフィードバック</h2>
+                <p>
+                    アプリを改善するために、あなたのフィードバックが必要です。新しい機能の提案、改善のアイデア、 
+                    または一般的なコメントを共有するために、お問い合わせください。
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>お問い合わせ</h2>
+                <p>ご質問や問題がございましたら、お問い合わせください：</p>
+                <p><strong>メール:</strong> <a href="mailto:info@mobilectapps.com.tr" class="email-link">info@mobilectapps.com.tr</a></p>
+                <p><strong>アプリケーション名:</strong> NinniParki</p>
+                <p><strong>開発者:</strong> MobilectApps</p>
+                <p><strong>件名:</strong> メールの件名に "NinniParki Support" と記載してください</p>
+            </div>
+            
+            <div class="footer">
+                <p>© 2024 MobilectApps. 無断転載禁止。</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const langSelect = document.getElementById('langSelect');
+        const langElements = document.querySelectorAll('[data-lang]');
+        const body = document.body;
+        const html = document.documentElement;
+        
+        // Browser dilini algıla
+        const browserLang = navigator.language.split('-')[0];
+        const savedLang = localStorage.getItem('supportLang') || browserLang || 'tr';
+        
+        // RTL dilleri
+        const rtlLangs = ['ar'];
+        
+        function setLanguage(lang) {
+            // Tüm dil öğelerini gizle
+            langElements.forEach(el => el.classList.remove('active'));
+            
+            // Seçilen dili göster
+            const activeLang = document.querySelector(`[data-lang="${lang}"]`);
+            if (activeLang) {
+                activeLang.classList.add('active');
+                langSelect.value = lang;
+                
+                // HTML lang attribute güncelle
+                html.setAttribute('lang', lang);
+                
+                // RTL kontrolü
+                if (rtlLangs.includes(lang)) {
+                    body.setAttribute('dir', 'rtl');
+                } else {
+                    body.removeAttribute('dir');
+                }
+                
+                // LocalStorage'a kaydet
+                localStorage.setItem('supportLang', lang);
+            }
+        }
+        
+        // Dil değişikliği eventi
+        langSelect.addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+        });
+        
+        // Sayfa yüklendiğinde kayıtlı veya tarayıcı dilini ayarla
+        setLanguage(savedLang);
+    </script>
+</body>
+</html>
